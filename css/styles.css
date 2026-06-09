@@ -267,6 +267,7 @@ nav.desktop-nav a:hover::after { transform: scaleX(1); }
 }
 .step-panel.open .step-v-label { opacity: 0; pointer-events: none; }
 .step-v-title {
+  text-transform: uppercase;
   font-family: var(--font-h); font-weight: 800; font-size: 1.05rem;
   letter-spacing: .04em; color: #fff;
   writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; line-height: 1;
@@ -282,6 +283,7 @@ nav.desktop-nav a:hover::after { transform: scaleX(1); }
   font-family: var(--font-h); font-weight: 900;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   letter-spacing: -.02em; color: #fff; line-height: 1.1; margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .step-open-desc { font-size: 1rem; line-height: 1.78; color: rgba(255,255,255,.65); max-width: 400px; }
 
@@ -333,6 +335,7 @@ nav.desktop-nav a:hover::after { transform: scaleX(1); }
   font-family: var(--font-h); font-weight: 800;
   font-size: clamp(1.2rem, 2.2vw, 1.7rem);
   color: var(--ink); line-height: 1.35; margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .contact-tagline em { font-style: normal; color: var(--accent); }
 .contact-sub { font-size: 1rem; color: var(--ink-lt); line-height: 1.7; margin-bottom: 36px; }
