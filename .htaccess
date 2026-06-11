@@ -1,0 +1,28 @@
+# WM Sports — Apache config for Cloudways
+Options -Indexes
+
+# Force HTTPS (uncomment after SSL is set up on Cloudways)
+ RewriteEngine On
+ RewriteCond %{HTTPS} off
+ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Protect includes folder — no direct access
+<FilesMatch "\.php$">
+  Order allow,deny
+  Allow from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^includes/ - [F,L]
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png  "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/css   "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType video/mp4  "access plus 1 month"
+</IfModule>

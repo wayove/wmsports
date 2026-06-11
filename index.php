@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>WM Sports — Beyond the Obvious</title>
-<link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-<!-- ── HEADER ── -->
-<header id="site-header">
-  <a href="#" class="logo"><img src="media/logo.png" alt="WM Sports" /></a>
-  <nav class="desktop-nav">
-    <a href="#about-intro">Who We Are</a>
-    <a href="#what-we-do">What We Do</a>
-    <a href="#how-we-win">How We Win</a>
-    <a href="#contact">Get in Touch</a>
-  </nav>
-  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</header>
-
-<nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-  <a href="#about-intro" class="nav-link">Who We Are</a>
-  <a href="#what-we-do"  class="nav-link">What We Do</a>
-  <a href="#how-we-win"  class="nav-link">How We Win</a>
-  <a href="#contact"     class="nav-link">Get in Touch</a>
-</nav>
+<?php
+$page_title = 'WM Sports — Beyond the Obvious';
+include 'includes/header.php';
+?>
 
 <!-- ── HERO ── -->
 <section id="hero">
   <div id="hero-bg">
-    <video id="hero-video" src="media/sports_video.mp4" autoplay muted loop playsinline preload="auto"></video>
+    <video id="hero-video" src="/media/sports_video.mp4" autoplay muted loop playsinline preload="auto"></video>
     <div id="hero-fallback"></div>
   </div>
   <div class="hero-content">
@@ -52,7 +26,7 @@
   <div class="about-block reveal">
     <h2 class="about-headline">Sport in India is growing.</h2>
     <div class="about-body-row">
-      <span class="about-vert-label">Challenge</span>
+      <span class="about-vert-label"><b>&nbsp;Challenge&nbsp;</b></span>
       <p class="about-text">Indian sport has never offered more to the organisations inside it. New audiences, new formats, new appetite from brands. But impact of sports is multidimensional, not only on the field, but across business conversations as well. Reducing the influence of well curated sports associations to a singular outcome limits the stakeholders from actualising its true potential.</p>
     </div>
   </div>
@@ -61,8 +35,8 @@
   <div class="about-block reveal reveal-delay-1">
     <h2 class="about-headline">Knowing what to do with that is a different skill.</h2>
     <div class="about-body-row">
-      <span class="about-vert-label">Solution</span>
-      <p class="about-text">Most organisations aren’t leaving value on the table by accident- the opportunity is simply harder to capture than it looks. Bridging the gap between what organizations are building and what they are getting from it is where we can help. For brands, rights holders, and federations to sustainably grow their commercial value- this value that hasn’t been fully realized yet- let’s find it.</p>
+      <span class="about-vert-label"><b>&nbsp;Solution&nbsp;</b></span>
+      <p class="about-text">Most organisations aren't leaving value on the table by accident- the opportunity is simply harder to capture than it looks. Bridging the gap between what organizations are building and what they are getting from it is where we can help. For brands, rights holders, and federations to sustainably grow their commercial value- this value that hasn't been fully realized yet- let's find it.</p>
     </div>
   </div>
 </div>
@@ -71,7 +45,7 @@
 <div id="about-who">
   <div class="about-who-left reveal">
     <h2 class="about-headline">We kept seeing opportunities that deserved more attention than they were getting.</h2>
-    <p class="about-text">WM Sports is our answer to that- a focused practice that comes in where it’s needed, works to a defined scope, and delivers something genuinely useful. Between us, we have sat at almost every seat this industry has: agency, brand, federation, venue, event. We are now building for what sport could be- ready to ask what more is possible?</p>
+    <p class="about-text">WM Sports is our answer to that- a focused practice that comes in where it's needed, works to a defined scope, and delivers something genuinely useful. Between us, we have sat at almost every seat this industry has: agency, brand, federation, venue, event. We are now building for what sport could be- ready to ask what more is possible?</p>
   </div>
   <div class="about-who-deco reveal reveal-delay-1">WHO<br>WE<br>ARE</div>
 </div>
@@ -141,17 +115,8 @@
   <p class="contact-sub reveal reveal-delay-1">Let's find it together.<br>WM Sports. Based in Gujarat, India.<br>Working across India and internationally.</p>
   <div class="contact-email-wrap reveal reveal-delay-2">
     <svg viewBox="0 0 16 16" fill="none" width="16" height="16"><rect x="1.5" y="3.5" width="13" height="9" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M1.5 5l6.5 4.5L14.5 5" stroke="currentColor" stroke-width="1.4"/></svg>
-    <a class="contact-email" href="mailto:info@wmsports.co">info@wmsports.co</a>  
+    <a class="contact-email" href="mailto:info@wmsports.co">info@wmsports.co</a>
   </div>
-  
 </section>
 
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="footer-logo"><img src="media/borderless-logo.png" alt="WinMargin Sports" /></div>
-  <span class="footer-copy">©2026 WinMargin Sports. All rights reserved.</span>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
